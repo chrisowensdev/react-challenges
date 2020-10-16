@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -27,7 +28,8 @@ class Counter extends Component {
 
     render() {
     return (
-        <>
+        <>  
+            <Link to="/">Home</Link>
             <h1>Counter</h1>
             <h1>{this.state.counter}</h1>
             <Button type="button" onClick={this._subtractClick}>-</Button>
