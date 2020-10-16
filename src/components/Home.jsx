@@ -5,7 +5,12 @@ const Home = () => {
     return (
         <div>
             <h1>Challenges</h1>
-            <Link to="/counter">Counter</Link>
+            <ul>
+                <li><Link to="/counter">Counter</Link></li>
+                <li><Link to="/texteditor">Text Editor</Link></li>
+            </ul>
+            
+            
         </div>
     )
 }
